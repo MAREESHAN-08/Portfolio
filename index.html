@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>MAREESWARAN | Software Engineer &amp; Data Science</title>
+  <meta name="description" content="Portfolio of Mareeswaran - Software Engineer, Data Science & Mobile Developer skilled in Python, SQL, Excel, Canva, Tableau, Java, and Flutter.">
+  <meta name="keywords" content="Mareeswaran, Software Engineer, Python, SQL, Excel, Canva, Tableau, Java, Flutter, Data Science, Portfolio, Sri Lanka">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png">
+
+  <!-- Google Fonts & Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Ambient Glowing Blobs -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ========================================================================
+       STICKY NAVBAR (RESPONSIVE & MOBILE TOUCH FRIENDLY)
+       ======================================================================== -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png" alt="Mareeswaran Logo">
+        <span class="nav-logo-text">MAREESWARAN<span class="nav-logo-tag">DEV</span></span>
+      </a>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="themeSwitchBtn" class="theme-switch-btn" title="Toggle Color Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+
+        <a href="#contact" class="btn-hire">
+          <i class="fa-solid fa-bolt"></i> Hire Me
+        </a>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION (OPTIMIZED FOR PHONE & DESKTOP)
+       ======================================================================== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge-status">
+            <span class="pulse-dot"></span>
+            Available for Opportunities &amp; Freelance · Colombo, LK
+          </div>
+
+          <div class="hero-greeting">Hi there, I am</div>
+          <h1 class="hero-name">
+            <span class="gradient-text">MAREESWARAN</span>
+          </h1>
+
+          <div class="hero-typing-wrap">
+            <span>Specializing in&nbsp;</span>
+            <span id="typingText" class="gradient-text">Software Engineer</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Aspiring Software Engineer &amp; Data Science Undergraduate skilled in <strong>Python, SQL, Excel, Canva, Tableau, Java, and Flutter</strong>. Passionate about building intelligent data workflows, scalable software architectures, and intuitive mobile &amp; web experiences.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="MAREESWARAN CV.pdf" class="btn-secondary" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/mareesh" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/MAREESHAN-08" target="_blank" title="GitHub" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/94715208168" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/eshxn_.____" target="_blank" title="Instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:eshanmareeshaneswaran@gmail.com" title="Email" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Holographic Avatar Showcase -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-halo"></div>
+            <div class="avatar-ring"></div>
+
+            <div class="avatar-img-box">
+              <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Mareeswaran Profile Photo" class="avatar-img">
+            </div>
+
+            <!-- Floating Badges (Desktop & Tablet) -->
+            <div class="floating-badge floating-badge-1">
+              <i class="fab fa-python" style="color:#38bdf8;"></i>
+              <span>Python &amp; SQL</span>
+            </div>
+            <div class="floating-badge floating-badge-2">
+              <i class="fa-solid fa-chart-pie" style="color:#10b981;"></i>
+              <span>Tableau &amp; Excel</span>
+            </div>
+            <div class="floating-badge floating-badge-3">
+              <i class="fa-solid fa-mobile-screen-button" style="color:#f59e0b;"></i>
+              <span>Java &amp; Flutter</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="metric-number">HND Computing</div>
+            <div class="metric-label">Graduated with Merit</div>
+          </div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-database"></i></div>
+          <div>
+            <div class="metric-number">BSc Data Science</div>
+            <div class="metric-label">Undergraduate (2026-2027)</div>
+          </div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div>
+            <div class="metric-number">Key Skill Stack</div>
+            <div class="metric-label">Python, SQL, Tableau, Flutter</div>
+          </div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <div class="metric-number">100% Commitment</div>
+            <div class="metric-label">Clean Code &amp; Fast Learner</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT ME SECTION
+       ======================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-user-tie"></i> Biography</div>
+        <h2 class="section-title">Engineering with <span class="gradient-text">Purpose &amp; Passion</span></h2>
+        <p class="section-desc">Bridging the gap between software development, data intelligence, and modern UI design.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Hi, I am <span class="gradient-text">Mareeswaran</span></h3>
+          <p>
+            I am an ambitious <strong>Software Engineer and Data Science Undergraduate</strong> with a passion for designing scalable applications, analyzing complex datasets, and building clean, user-centric interfaces.
+          </p>
+          <p>
+            Having completed my <strong>BTEC Higher National Diploma in Computing with Merit</strong> and currently advancing my <strong>Bachelor’s Degree in Data Science</strong> at Esoft Metro Campus (affiliated with London Metropolitan University), I bring strong hands-on proficiency in <strong>Python, SQL, Excel, Canva, Tableau, Java, and Flutter</strong>.
+          </p>
+          <p>
+            Whether it is structuring relational databases, automating analytics pipelines, creating business dashboards in Tableau, or designing responsive apps, I focus on clean code and measurable value.
+          </p>
+
+          <div style="margin-top: 25px; display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#contact" class="btn-primary">Let's Talk</a>
+            <a href="Mareeswaran cv.pdf" class="btn-secondary" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <i class="fab fa-python"></i>
+            <h4>Python &amp; Data Science</h4>
+            <p>Data cleaning, exploratory analysis, Pandas, NumPy, and statistical modeling.</p>
+          </div>
+          <div class="highlight-box">
+            <i class="fa-solid fa-database"></i>
+            <h4>SQL &amp; Database Design</h4>
+            <p>Relational modeling, 3NF normalization, complex queries, and SQL Server.</p>
+          </div>
+          <div class="highlight-box">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h4>Excel &amp; Tableau BI</h4>
+            <p>Advanced PivotTables, automated reporting, KPI dashboards, and data visualization.</p>
+          </div>
+          <div class="highlight-box">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h4>Java, Flutter &amp; Canva</h4>
+            <p>Cross-platform mobile apps, OOP software engineering, and modern visual UI design.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Marquee / Tech Stack Ticker -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <div class="marquee-item"><i class="fab fa-python" style="color:#38bdf8;"></i> Python</div>
+          <div class="marquee-item"><i class="fa-solid fa-database" style="color:#f59e0b;"></i> SQL</div>
+          <div class="marquee-item"><i class="fa-solid fa-file-excel" style="color:#10b981;"></i> Excel</div>
+          <div class="marquee-item"><i class="fa-solid fa-palette" style="color:#ec4899;"></i> Canva</div>
+          <div class="marquee-item"><i class="fa-solid fa-chart-pie" style="color:#6366f1;"></i> Tableau</div>
+          <div class="marquee-item"><i class="fab fa-java" style="color:#ef4444;"></i> Java</div>
+          <div class="marquee-item"><i class="fa-solid fa-mobile-screen-button" style="color:#06b6d4;"></i> Flutter</div>
+          <div class="marquee-item"><i class="fab fa-js" style="color:#f59e0b;"></i> JavaScript</div>
+          <div class="marquee-item"><i class="fab fa-git-alt" style="color:#f97316;"></i> Git &amp; GitHub</div>
+          <!-- Duplicate set for infinite loop -->
+          <div class="marquee-item"><i class="fab fa-python" style="color:#38bdf8;"></i> Python</div>
+          <div class="marquee-item"><i class="fa-solid fa-database" style="color:#f59e0b;"></i> SQL</div>
+          <div class="marquee-item"><i class="fa-solid fa-file-excel" style="color:#10b981;"></i> Excel</div>
+          <div class="marquee-item"><i class="fa-solid fa-palette" style="color:#ec4899;"></i> Canva</div>
+          <div class="marquee-item"><i class="fa-solid fa-chart-pie" style="color:#6366f1;"></i> Tableau</div>
+          <div class="marquee-item"><i class="fab fa-java" style="color:#ef4444;"></i> Java</div>
+          <div class="marquee-item"><i class="fa-solid fa-mobile-screen-button" style="color:#06b6d4;"></i> Flutter</div>
+          <div class="marquee-item"><i class="fab fa-js" style="color:#f59e0b;"></i> JavaScript</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SKILLS SECTION (PYTHON, SQL, EXCEL, CANVA, TABLEAU, JAVA, FLUTTER)
+       ======================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-laptop-code"></i> Core Competencies</div>
+        <h2 class="section-title">My Skills &amp; <span class="gradient-text">Tech Stack</span></h2>
+        <p class="section-desc">Focused expertise in Python, SQL, Excel, Canva, Tableau, Java, and Flutter for software &amp; data solutions.</p>
+      </div>
+
+      <!-- Filter Controls (Mobile Friendly Wrap) -->
+      <div class="skills-filter">
+        <button class="filter-btn skills-filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn skills-filter-btn" data-filter="programming">Programming &amp; Mobile</button>
+        <button class="filter-btn skills-filter-btn" data-filter="data">Data &amp; Analytics</button>
+        <button class="filter-btn skills-filter-btn" data-filter="design">Design &amp; Tools</button>
+      </div>
+
+      <!-- Grid of Skills (100% Phone Friendly) -->
+      <div class="skills-grid">
+        
+        <!-- 1. PYTHON -->
+        <div class="skill-card" data-category="programming data">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-python" style="color:#38bdf8;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">Python</div>
+          <div class="skill-desc">Data manipulation with Pandas, numerical computing with NumPy, automated scripting, and ML fundamentals.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="90%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>90%</span></div>
+        </div>
+
+        <!-- 2. SQL -->
+        <div class="skill-card" data-category="data programming">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-database" style="color:#f59e0b;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">SQL (MySQL &amp; SQL Server)</div>
+          <div class="skill-desc">Relational schema design, complex JOINs, indexing, stored procedures, data extraction, and 3NF normalization.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="88%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>88%</span></div>
+        </div>
+
+        <!-- 3. EXCEL -->
+        <div class="skill-card" data-category="data design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-file-excel" style="color:#10b981;"></i></div>
+            <span class="skill-level-badge">Expert</span>
+          </div>
+          <div class="skill-name">Microsoft Excel</div>
+          <div class="skill-desc">Advanced formulas, PivotTables, VLOOKUP/XLOOKUP, conditional formatting, data cleaning, and KPI modeling.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="92%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>92%</span></div>
+        </div>
+
+        <!-- 4. TABLEAU -->
+        <div class="skill-card" data-category="data design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-chart-pie" style="color:#6366f1;"></i></div>
+            <span class="skill-level-badge">Proficient</span>
+          </div>
+          <div class="skill-name">Tableau</div>
+          <div class="skill-desc">Interactive business intelligence dashboards, KPI visualization, drill-downs, trend forecasting, and executive reports.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="86%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>86%</span></div>
+        </div>
+
+        <!-- 5. JAVA -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-java" style="color:#ef4444;"></i></div>
+            <span class="skill-level-badge">Proficient</span>
+          </div>
+          <div class="skill-name">Java</div>
+          <div class="skill-desc">Core Java, Object-Oriented Programming (OOP), inheritance, interfaces, collections, and structured backend logic.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="84%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>84%</span></div>
+        </div>
+
+        <!-- 6. FLUTTER -->
+        <div class="skill-card" data-category="programming design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-mobile-screen-button" style="color:#06b6d4;"></i></div>
+            <span class="skill-level-badge">Proficient</span>
+          </div>
+          <div class="skill-name">Flutter &amp; Dart</div>
+          <div class="skill-desc">Cross-platform mobile applications for Android &amp; iOS, responsive widget architecture, state management, and modern mobile UI.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="82%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>82%</span></div>
+        </div>
+
+        <!-- 7. CANVA -->
+        <div class="skill-card" data-category="design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-palette" style="color:#ec4899;"></i></div>
+            <span class="skill-level-badge">Expert</span>
+          </div>
+          <div class="skill-name">Canva</div>
+          <div class="skill-desc">UI/UX visual mockups, digital branding, presentation decks, social media assets, and vector graphic composition.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="94%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>94%</span></div>
+        </div>
+
+        <!-- 8. WEB TECH -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-js" style="color:#f59e0b;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">JavaScript &amp; Web Dev</div>
+          <div class="skill-desc">Modern ES6+, HTML5, CSS3, DOM manipulation, responsive layouts, and interactive single-page web experiences.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="88%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>88%</span></div>
+        </div>
+
+        <!-- 9. GIT & TOOLS -->
+        <div class="skill-card" data-category="design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-git-alt" style="color:#f97316;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">Git &amp; GitHub</div>
+          <div class="skill-desc">Version control, feature branching, collaborative team workflows, pull requests, and repository maintenance.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="88%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>88%</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SHOWCASE SECTION
+       ======================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Work</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Real-World Projects</span></h2>
+        <p class="section-desc">Each application is engineered with clean code, scalable architecture, and intuitive user experiences.</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="skills-filter">
+        <button class="filter-btn project-filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn project-filter-btn" data-filter="datascience">Data Science &amp; AI</button>
+        <button class="filter-btn project-filter-btn" data-filter="software">Enterprise &amp; SQL</button>
+        <button class="filter-btn project-filter-btn" data-filter="fullstack">Web &amp; Mobile</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: 3D Human Pose Estimation & Fitness Analysis -->
+        <div class="project-card" data-category="datascience">
+          <div class="project-img-wrap">
+            <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Fitness Coach AI" class="project-img" style="object-fit:contain; background:#0f172a; padding:12px;">
+            <span class="project-badge-tag"><i class="fa-solid fa-person-running"></i> Python &amp; AI</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+              <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Mareeswaran" style="width:38px; height:38px; border-radius:50%; border:2px solid #06b6d4; object-fit:cover;">
+              <div>
+                <div style="font-weight:700; font-size:0.88rem;">Mareeswaran</div>
+                <div style="font-size:0.78rem; opacity:0.7;">AI &amp; Data Science Developer</div>
+              </div>
+            </div>
+            <h3 class="project-title">3D Human Pose Estimation &amp; Predictive Fitness Analysis</h3>
+            <p class="project-description">
+              AI-powered fitness coaching system using 3D human pose estimation to track body movements in real time, analyze exercise form, count repetitions, and generate predictive performance insights.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag-pill">Python</span>
+              <span class="project-tag-pill">MediaPipe</span>
+              <span class="project-tag-pill">OpenCV</span>
+              <span class="project-tag-pill">Machine Learning</span>
+              <span class="project-tag-pill">Pose Estimation</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/MAREESHAN-08/Fitnesss_cocach" target="_blank" class="btn-project-action">
+                <i class="fab fa-github"></i> Code Repository
+              </a>
+              <button class="btn-project-details" data-id="1">
+                View Case Study <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Photography Website -->
+        <div class="project-card" data-category="fullstack">
+          <div class="project-img-wrap">
+            <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Photography Website" class="project-img" style="object-fit:contain; background:#0f172a; padding:12px;">
+            <span class="project-badge-tag"><i class="fa-solid fa-camera"></i> Web Dev</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+              <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Mareeswaran" style="width:38px; height:38px; border-radius:50%; border:2px solid #06b6d4; object-fit:cover;">
+              <div>
+                <div style="font-weight:700; font-size:0.88rem;">Mareeswaran</div>
+                <div style="font-size:0.78rem; opacity:0.7;">Full-Stack Web Developer</div>
+              </div>
+            </div>
+            <h3 class="project-title">Malcolm Lismore Photography Website</h3>
+            <p class="project-description">
+              A stunning, responsive photography portfolio for a Scottish landscape, wedding &amp; wildlife photographer. Features an immersive gallery, smooth navigation, and elegant visual design.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag-pill">HTML5</span>
+              <span class="project-tag-pill">CSS3</span>
+              <span class="project-tag-pill">JavaScript</span>
+              <span class="project-tag-pill">Responsive Design</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://mareeshan-08.github.io/Photography-Website/" target="_blank" class="btn-project-action">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site
+              </a>
+              <button class="btn-project-details" data-id="2">
+                View Case Study <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Community Sports Facilities Booking System -->
+        <div class="project-card" data-category="software">
+          <div class="project-img-wrap">
+            <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Sports Booking System" class="project-img" style="object-fit:contain; background:#0f172a; padding:12px;">
+            <span class="project-badge-tag"><i class="fa-solid fa-calendar-check"></i> Java &amp; SQL</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+              <img src="IMG-20250912-WA0027-removebg-preview.png" alt="Mareeswaran" style="width:38px; height:38px; border-radius:50%; border:2px solid #06b6d4; object-fit:cover;">
+              <div>
+                <div style="font-weight:700; font-size:0.88rem;">Mareeswaran</div>
+                <div style="font-size:0.78rem; opacity:0.7;">Software &amp; Database Engineer</div>
+              </div>
+            </div>
+            <h3 class="project-title">iCommunity &ndash; Sports Facilities Booking System</h3>
+            <p class="project-description">
+              A full-featured community sports platform enabling users to search, reserve, and manage sports venues, with admin controls, booking schedules, and member management modules.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag-pill">Java</span>
+              <span class="project-tag-pill">SQL</span>
+              <span class="project-tag-pill">JDBC</span>
+              <span class="project-tag-pill">OOP</span>
+              <span class="project-tag-pill">Swing UI</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/MAREESHAN-08/Community-Sports-Facilities-Booking-System" target="_blank" class="btn-project-action">
+                <i class="fab fa-github"></i> Code Repository
+              </a>
+              <button class="btn-project-details" data-id="3">
+                View Case Study <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ========================================================================
+       EDUCATION & TIMELINE SECTION
+       ======================================================================== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</div>
+        <h2 class="section-title">Education &amp; <span class="gradient-text">Qualifications</span></h2>
+        <p class="section-desc">My academic foundation in Computing, Software Engineering, and Data Science.</p>
+      </div>
+
+      <div class="timeline-container">
+
+        <!-- 1. Bachelor's in Data Science -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-institute">
+                <img src="images.png" alt="ESU Logo" class="institute-logo">
+                <div>
+                  <h3 class="timeline-title">Bachelor’s Degree in Data Science</h3>
+                  <div class="timeline-subtitle">Esoft Metro Campus (Affiliated with London Metropolitan University, UK)</div>
+                </div>
+              </div>
+              <span class="timeline-date">FEB 2026 – FEB 2027</span>
+            </div>
+            <div class="timeline-grade-badge"><i class="fa-solid fa-clock"></i> Status: In Progress / Pending</div>
+            <div class="timeline-body">
+              Advanced curriculum covering statistical modeling, Python for data science, SQL analytics, Tableau dashboarding, big data, and machine learning foundations.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Pearson BTEC HND in Computing -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-award"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-institute">
+                <img src="images.png" alt="ESU Logo" class="institute-logo">
+                <div>
+                  <h3 class="timeline-title">Pearson BTEC Higher National Diploma in Computing (HND)</h3>
+                  <div class="timeline-subtitle">Esoft Metro Campus</div>
+                </div>
+              </div>
+              <span class="timeline-date">JUN 2023 – JUL 2025</span>
+            </div>
+            <div class="timeline-grade-badge"><i class="fa-solid fa-star"></i> Grade: MERIT Achieved</div>
+            <div class="timeline-body">
+              Comprehensive two-year diploma covering Software Engineering, Object-Oriented Programming (Java / C#), Database Design &amp; Normalization (SQL Server), Web &amp; Mobile Development.
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Diploma in English -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-book-open"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-institute">
+                <img src="images.png" alt="ESU Logo" class="institute-logo">
+                <div>
+                  <h3 class="timeline-title">Diploma in English</h3>
+                  <div class="timeline-subtitle">Esoft Metro Campus</div>
+                </div>
+              </div>
+              <span class="timeline-date">FEB 2026 – DEC 2026</span>
+            </div>
+            <div class="timeline-grade-badge"><i class="fa-solid fa-clock"></i> Status: In Progress</div>
+            <div class="timeline-body">
+              Professional English communication, corporate technical documentation, and cross-functional team presentations.
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Diploma in Information Technology -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-certificate"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-institute">
+                <img src="images.png" alt="ESU Logo" class="institute-logo">
+                <div>
+                  <h3 class="timeline-title">Diploma in Information Technology (DiTEC)</h3>
+                  <div class="timeline-subtitle">Esoft Metro Campus</div>
+                </div>
+              </div>
+              <span class="timeline-date">JAN 2022 – FEB 2023</span>
+            </div>
+            <div class="timeline-grade-badge"><i class="fa-solid fa-check-circle"></i> Grade: PASS</div>
+            <div class="timeline-body">
+              Core foundation in computer hardware, networking principles, programming basics, Microsoft Office / Excel, and web basics.
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. O/L School -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-school"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-institute">
+                <img src="Screenshot 2025-09-13 182741.png" alt="St. Lucia's College Logo" class="institute-logo">
+                <div>
+                  <h3 class="timeline-title">G.C.E Ordinary Level (O/L) Examination</h3>
+                  <div class="timeline-subtitle">St. Lucia’s College, Kotahena, Colombo-13</div>
+                </div>
+              </div>
+              <span class="timeline-date">2020</span>
+            </div>
+            <div class="timeline-body">
+              Completed secondary education with credit passes in Mathematics, Tamil, Hinduism, and Health Science; ordinary passes in English, Science, History, and Music.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EXPERIENCE & VALUE PROPOSITION
+       ======================================================================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Value Proposition</div>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">What I Bring</span></h2>
+        <p class="section-desc">Why hiring me as a Junior Software Engineer creates immediate value for your engineering team.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-code-merge"></i></div>
+          <h3 class="service-title">Software Engineering Fundamentals</h3>
+          <p class="service-desc">
+            Strong foundation in Java and Python. Experienced in writing modular, readable OOP code and eager to contribute to production sprints.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+          <h3 class="service-title">SQL &amp; Relational Databases</h3>
+          <p class="service-desc">
+            Comfortable designing normalized relational schemas, writing analytical SQL queries, indexing, and connecting applications to databases.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3 class="service-title">Excel &amp; Tableau Analytics</h3>
+          <p class="service-desc">
+            Proficient in transforming raw business data into actionable visual insights using Advanced Excel formulas, PivotTables, and Tableau dashboards.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3 class="service-title">Flutter Mobile &amp; Canva UI</h3>
+          <p class="service-desc">
+            Equipped to design beautiful visual assets in Canva and translate them into responsive cross-platform mobile apps with Flutter.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT SECTION
+       ======================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+        <p class="section-desc">Have an open opportunity, an internship role, or a project idea? Reach out directly!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 22px;">Direct Channels</h3>
+
+          <!-- Email -->
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-title">Email Address</div>
+              <a href="mailto:eshanmareeshaneswaran@gmail.com" class="contact-info-val">eshanmareeshaneswaran@gmail.com</a>
+              <button id="copyEmailBtn" class="copy-btn" title="Copy to clipboard">Copy</button>
+            </div>
+          </div>
+
+          <!-- Phone / WhatsApp -->
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-info-title">Phone / WhatsApp</div>
+              <a href="tel:+94715208168" class="contact-info-val">+94 715 208 168</a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-info-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-info-title">Location</div>
+              <span class="contact-info-val">Colombo, Sri Lanka</span>
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp Button -->
+          <a href="https://wa.me/94715208168?text=Hello%20Mareeswaran,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="whatsapp-direct-btn">
+            <i class="fab fa-whatsapp" style="font-size:1.3rem;"></i> Direct Chat on WhatsApp
+          </a>
+
+          <!-- Socials row -->
+          <div class="hero-socials" style="margin-top: 22px;">
+            <a href="https://www.linkedin.com/in/mareesh" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/MAREESHAN-08" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/94715208168" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/eshxn_.____" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 22px;">Send a Direct Message</h3>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email *</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="e.g. john@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Software Engineer Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <div id="formAlert" class="form-alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <img src="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png" alt="Logo" style="height:30px; width:auto;">
+          <span style="font-weight:800; font-size:1.05rem; color:#fff;">MAREESWARAN</span>
+        </div>
+
+        <div class="footer-copy">
+          &copy; 2026 MAREESWARAN. All rights reserved. Crafted with clean code &amp; responsive design.
+        </div>
+
+        <div style="display:flex; gap:16px;">
+          <a href="#home" style="color:var(--text-muted); font-size:0.9rem; text-decoration:none;">Back to Top</a>
+          <a href="https://github.com/MAREESHAN-08" target="_blank" style="color:var(--text-muted); font-size:0.9rem; text-decoration:none;">GitHub</a>
+          <a href="https://www.linkedin.com/in/mareesh" target="_blank" style="color:var(--text-muted); font-size:0.9rem; text-decoration:none;">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PROJECT CASE STUDY MODAL
+       ======================================================================== -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="modalImg" src="project1-preview.svg" alt="Project Preview" class="modal-hero-img">
+      <div class="modal-body">
+        <h3 id="modalTitle" style="font-size:1.6rem; font-weight:800; margin-bottom:12px;">Project Title</h3>
+        <p id="modalDesc" style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:20px;">Project description...</p>
+        
+        <h4 style="font-size:1.05rem; font-weight:700; margin-bottom:10px; color:var(--text-main);">Key Features &amp; Architecture</h4>
+        <ul id="modalFeatures" style="list-style:none; padding:0; margin-bottom:20px; color:var(--text-muted); font-size:0.92rem; line-height:1.8;">
+        </ul>
+
+        <h4 style="font-size:1.05rem; font-weight:700; margin-bottom:10px; color:var(--text-main);">Technologies Employed</h4>
+        <div id="modalTech" class="project-tags" style="margin-bottom:24px;"></div>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a id="modalGithub" href="#" target="_blank" class="btn-primary">
+            <i class="fab fa-github"></i> View GitHub Source
+          </a>
+          <a id="modalLive" href="#" target="_blank" class="btn-secondary">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Project Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <div class="floating-actions">
+    <button id="backToTopBtn" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- JavaScript Engine -->
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="480" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="80" y1="0" x2="80" y2="480"/>
+    <line x1="160" y1="0" x2="160" y2="480"/>
+    <line x1="240" y1="0" x2="240" y2="480"/>
+    <line x1="320" y1="0" x2="320" y2="480"/>
+    <line x1="400" y1="0" x2="400" y2="480"/>
+    <line x1="480" y1="0" x2="480" y2="480"/>
+    <line x1="560" y1="0" x2="560" y2="480"/>
+    <line x1="640" y1="0" x2="640" y2="480"/>
+    <line x1="720" y1="0" x2="720" y2="480"/>
+  </g>
+
+  <!-- Browser/Window Header -->
+  <rect x="0" y="0" width="800" height="45" rx="16" fill="#1e293b" fill-opacity="0.7"/>
+  <rect x="0" y="25" width="800" height="20" fill="#1e293b" fill-opacity="0.7"/>
+  <circle cx="25" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="22" r="6" fill="#10b981"/>
+  <rect x="180" y="10" width="440" height="25" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="27" fill="#94a3b8" font-family="'Segoe UI', Poppins, sans-serif" font-size="11" text-anchor="middle">https://ai-data-analytics.mareeswaran.dev</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="60" width="160" height="400" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1"/>
+  <circle cx="45" cy="85" r="12" fill="url(#cyanGrad)"/>
+  <rect x="68" y="80" width="75" height="10" rx="4" fill="#f8fafc"/>
+  <rect x="35" y="125" width="130" height="28" rx="6" fill="url(#cyanGrad)" fill-opacity="0.2"/>
+  <rect x="55" y="134" width="70" height="8" rx="3" fill="#38bdf8"/>
+  <rect x="55" y="174" width="80" height="8" rx="3" fill="#64748b"/>
+  <rect x="55" y="214" width="65" height="8" rx="3" fill="#64748b"/>
+  <rect x="55" y="254" width="75" height="8" rx="3" fill="#64748b"/>
+  <rect x="55" y="294" width="90" height="8" rx="3" fill="#64748b"/>
+
+  <!-- Top Metric Cards -->
+  <rect x="200" y="60" width="180" height="85" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="215" y="85" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Total Processed Rows</text>
+  <text x="215" y="115" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">1.42M+</text>
+  <text x="315" y="115" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">+24.8%</text>
+
+  <rect x="395" y="60" width="180" height="85" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="410" y="85" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Model Accuracy</text>
+  <text x="410" y="115" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">96.4%</text>
+  <text x="510" y="115" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="12">F1: 0.94</text>
+
+  <rect x="590" y="60" width="190" height="85" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="605" y="85" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Inference Latency</text>
+  <text x="605" y="115" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">14.2 ms</text>
+  <text x="715" y="115" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="12">Real-time</text>
+
+  <!-- Big Interactive Chart Area -->
+  <rect x="200" y="160" width="375" height="200" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="215" y="188" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">Data Trends & Predictive Forecasting</text>
+  <rect x="500" y="174" width="60" height="20" rx="4" fill="#0f172a" stroke="#334155"/>
+  <text x="530" y="188" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10" text-anchor="middle">Python ML</text>
+  
+  <!-- Line Chart with Area Gradient -->
+  <path d="M 220 320 Q 260 290 300 305 T 380 250 T 450 260 T 520 210 T 560 220 L 560 330 L 220 330 Z" fill="url(#chartGrad)"/>
+  <path d="M 220 320 Q 260 290 300 305 T 380 250 T 450 260 T 520 210 T 560 220" fill="none" stroke="#06b6d4" stroke-width="3"/>
+  <circle cx="520" cy="210" r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Secondary Distribution Radar / Donut Chart -->
+  <rect x="590" y="160" width="190" height="200" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="605" y="188" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Feature Breakdown</text>
+  <!-- Donut SVG -->
+  <circle cx="685" cy="260" r="45" fill="none" stroke="#334155" stroke-width="14"/>
+  <circle cx="685" cy="260" r="45" fill="none" stroke="#06b6d4" stroke-width="14" stroke-dasharray="160 280" stroke-dashoffset="0"/>
+  <circle cx="685" cy="260" r="45" fill="none" stroke="#ec4899" stroke-width="14" stroke-dasharray="80 280" stroke-dashoffset="-160"/>
+  <circle cx="685" cy="260" r="45" fill="none" stroke="#f59e0b" stroke-width="14" stroke-dasharray="40 280" stroke-dashoffset="-240"/>
+  <text x="685" y="265" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" text-anchor="middle">EDA</text>
+
+  <!-- Bottom Data Table Preview -->
+  <rect x="200" y="375" width="580" height="85" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+  <rect x="215" y="390" width="80" height="8" rx="2" fill="#38bdf8"/>
+  <rect x="315" y="390" width="90" height="8" rx="2" fill="#64748b"/>
+  <rect x="430" y="390" width="110" height="8" rx="2" fill="#64748b"/>
+  <rect x="560" y="390" width="70" height="8" rx="2" fill="#10b981"/>
+  
+  <rect x="215" y="415" width="70" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="315" y="415" width="80" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="430" y="415" width="95" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="560" y="415" width="60" height="7" rx="2" fill="#10b981"/>
+
+  <rect x="215" y="438" width="75" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="315" y="438" width="85" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="430" y="438" width="105" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="560" y="438" width="55" height="7" rx="2" fill="#10b981"/>
+</svg>

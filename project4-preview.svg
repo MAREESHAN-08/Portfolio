@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" rx="16" fill="url(#bgGrad4)"/>
+
+  <!-- Browser Header -->
+  <rect x="0" y="0" width="800" height="45" rx="16" fill="#1e293b" fill-opacity="0.8"/>
+  <rect x="0" y="25" width="800" height="20" fill="#1e293b" fill-opacity="0.8"/>
+  <circle cx="25" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="22" r="6" fill="#10b981"/>
+  <rect x="180" y="10" width="440" height="25" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="27" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" text-anchor="middle">pulsetask.agile.io | Sprint Board &amp; Task Workflow</text>
+
+  <!-- Board Header -->
+  <text x="35" y="82" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="17" font-weight="bold">⚡ PulseTask · Sprint 14</text>
+  <rect x="580" y="62" width="90" height="28" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="625" y="80" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11" text-anchor="middle">Filter (All)</text>
+  <rect x="680" y="62" width="85" height="28" rx="6" fill="url(#neonCyan)"/>
+  <text x="722" y="80" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">+ New Task</text>
+
+  <!-- 3 Kanban Columns -->
+  <!-- Column 1: To Do -->
+  <rect x="30" y="105" width="225" height="350" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155"/>
+  <circle cx="50" cy="128" r="5" fill="#f59e0b"/>
+  <text x="65" y="132" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">To Do</text>
+  <text x="230" y="132" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12" text-anchor="end">3</text>
+
+  <!-- Card 1.1 -->
+  <rect x="42" y="150" width="201" height="90" rx="8" fill="#0f172a" stroke="#334155"/>
+  <rect x="52" y="162" width="60" height="16" rx="4" fill="#f59e0b" fill-opacity="0.2"/>
+  <text x="82" y="174" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Database</text>
+  <text x="52" y="196" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Schema Normalization (3NF)</text>
+  <text x="52" y="222" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Due in 2 days · P1 High</text>
+
+  <!-- Card 1.2 -->
+  <rect x="42" y="250" width="201" height="90" rx="8" fill="#0f172a" stroke="#334155"/>
+  <rect x="52" y="262" width="60" height="16" rx="4" fill="#38bdf8" fill-opacity="0.2"/>
+  <text x="82" y="274" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Frontend</text>
+  <text x="52" y="296" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Responsive Mobile Drawer</text>
+  <text x="52" y="322" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Due in 4 days · P2 Med</text>
+
+  <!-- Column 2: In Progress -->
+  <rect x="285" y="105" width="230" height="350" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#06b6d4" stroke-width="1.2"/>
+  <circle cx="305" cy="128" r="5" fill="#06b6d4"/>
+  <text x="320" y="132" fill="#06b6d4" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">In Progress</text>
+  <text x="495" y="132" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12" text-anchor="end">2</text>
+
+  <!-- Card 2.1 -->
+  <rect x="298" y="150" width="204" height="95" rx="8" fill="#0f172a" stroke="#06b6d4" stroke-opacity="0.6"/>
+  <rect x="308" y="162" width="65" height="16" rx="4" fill="#06b6d4" fill-opacity="0.2"/>
+  <text x="340" y="174" fill="#06b6d4" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Full Stack</text>
+  <text x="308" y="196" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">JWT Auth &amp; Role Guard</text>
+  <rect x="308" y="215" width="130" height="6" rx="3" fill="#334155"/>
+  <rect x="308" y="215" width="95" height="6" rx="3" fill="#06b6d4"/>
+  <text x="480" y="222" fill="#06b6d4" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">75%</text>
+
+  <!-- Card 2.2 -->
+  <rect x="298" y="255" width="204" height="95" rx="8" fill="#0f172a" stroke="#334155"/>
+  <rect x="308" y="267" width="70" height="16" rx="4" fill="#a855f7" fill-opacity="0.2"/>
+  <text x="343" y="279" fill="#a855f7" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Data Pipeline</text>
+  <text x="308" y="301" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Pandas ETL Automation</text>
+  <rect x="308" y="320" width="130" height="6" rx="3" fill="#334155"/>
+  <rect x="308" y="320" width="55" height="6" rx="3" fill="#a855f7"/>
+  <text x="480" y="327" fill="#a855f7" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">40%</text>
+
+  <!-- Column 3: Completed / Done -->
+  <rect x="545" y="105" width="225" height="350" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155"/>
+  <circle cx="565" cy="128" r="5" fill="#10b981"/>
+  <text x="580" y="132" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Done</text>
+  <text x="750" y="132" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12" text-anchor="end">4</text>
+
+  <!-- Card 3.1 -->
+  <rect x="557" y="150" width="201" height="85" rx="8" fill="#0f172a" stroke="#10b981" stroke-opacity="0.4"/>
+  <rect x="567" y="162" width="60" height="16" rx="4" fill="#10b981" fill-opacity="0.2"/>
+  <text x="597" y="174" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Completed</text>
+  <text x="567" y="196" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">API Health Check Endpoint</text>
+  <text x="567" y="218" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="10">✓ Deployed to Staging</text>
+
+  <!-- Card 3.2 -->
+  <rect x="557" y="245" width="201" height="85" rx="8" fill="#0f172a" stroke="#10b981" stroke-opacity="0.4"/>
+  <rect x="567" y="257" width="60" height="16" rx="4" fill="#10b981" fill-opacity="0.2"/>
+  <text x="597" y="269" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Completed</text>
+  <text x="567" y="291" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Git CI/CD Pipeline Setup</text>
+  <text x="567" y="313" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="10">✓ Verified passing 100%</text>
+</svg>

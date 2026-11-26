@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Skills &amp; Tech Stack | MAREESWARAN</title>
+  <link rel="icon" type="image/png" href="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <canvas id="particleCanvas"></canvas>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png" alt="Logo">
+        <span class="nav-logo-text">MAREESWARAN<span class="nav-logo-tag">DEV</span></span>
+      </a>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeSwitchBtn" class="theme-switch-btn" title="Toggle Theme"><i class="fa-solid fa-palette"></i></button>
+        <a href="contact.html" class="btn-hire"><i class="fa-solid fa-bolt"></i> Hire Me</a>
+        <button id="menuToggle" class="menu-toggle"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section style="padding: 60px 0 90px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-code"></i> Technical Stack</div>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Proficiencies</span></h2>
+        <p class="section-desc">Focused expertise in Python, SQL, Excel, Canva, Tableau, Java, and Flutter for software &amp; data solutions.</p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="filter-btn skills-filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn skills-filter-btn" data-filter="programming">Programming &amp; Mobile</button>
+        <button class="filter-btn skills-filter-btn" data-filter="data">Data &amp; Analytics</button>
+        <button class="filter-btn skills-filter-btn" data-filter="design">Design &amp; Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. PYTHON -->
+        <div class="skill-card" data-category="programming data">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-python" style="color:#38bdf8;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">Python</div>
+          <div class="skill-desc">Data manipulation with Pandas, numerical computing with NumPy, automated scripting, and ML fundamentals.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="90%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>90%</span></div>
+        </div>
+
+        <!-- 2. SQL -->
+        <div class="skill-card" data-category="data programming">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-database" style="color:#f59e0b;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">SQL (MySQL &amp; SQL Server)</div>
+          <div class="skill-desc">Relational schema design, complex JOINs, indexing, stored procedures, data extraction, and 3NF normalization.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="88%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>88%</span></div>
+        </div>
+
+        <!-- 3. EXCEL -->
+        <div class="skill-card" data-category="data design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-file-excel" style="color:#10b981;"></i></div>
+            <span class="skill-level-badge">Expert</span>
+          </div>
+          <div class="skill-name">Microsoft Excel</div>
+          <div class="skill-desc">Advanced formulas, PivotTables, VLOOKUP/XLOOKUP, conditional formatting, data cleaning, and KPI modeling.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="92%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>92%</span></div>
+        </div>
+
+        <!-- 4. TABLEAU -->
+        <div class="skill-card" data-category="data design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-chart-pie" style="color:#6366f1;"></i></div>
+            <span class="skill-level-badge">Proficient</span>
+          </div>
+          <div class="skill-name">Tableau</div>
+          <div class="skill-desc">Interactive business intelligence dashboards, KPI visualization, drill-downs, trend forecasting, and executive reports.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="86%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>86%</span></div>
+        </div>
+
+        <!-- 5. JAVA -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-java" style="color:#ef4444;"></i></div>
+            <span class="skill-level-badge">Proficient</span>
+          </div>
+          <div class="skill-name">Java</div>
+          <div class="skill-desc">Core Java, Object-Oriented Programming (OOP), inheritance, interfaces, collections, and structured backend logic.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="84%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>84%</span></div>
+        </div>
+
+        <!-- 6. FLUTTER -->
+        <div class="skill-card" data-category="programming design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-mobile-screen-button" style="color:#06b6d4;"></i></div>
+            <span class="skill-level-badge">Proficient</span>
+          </div>
+          <div class="skill-name">Flutter &amp; Dart</div>
+          <div class="skill-desc">Cross-platform mobile applications for Android &amp; iOS, responsive widget architecture, state management, and modern mobile UI.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="82%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>82%</span></div>
+        </div>
+
+        <!-- 7. CANVA -->
+        <div class="skill-card" data-category="design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-palette" style="color:#ec4899;"></i></div>
+            <span class="skill-level-badge">Expert</span>
+          </div>
+          <div class="skill-name">Canva</div>
+          <div class="skill-desc">UI/UX visual mockups, digital branding, presentation decks, social media assets, and vector graphic composition.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="94%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>94%</span></div>
+        </div>
+
+        <!-- 8. WEB TECH -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-js" style="color:#f59e0b;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">JavaScript &amp; Web Dev</div>
+          <div class="skill-desc">Modern ES6+, HTML5, CSS3, DOM manipulation, responsive layouts, and interactive single-page web experiences.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="88%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>88%</span></div>
+        </div>
+
+        <!-- 9. GIT & TOOLS -->
+        <div class="skill-card" data-category="design">
+          <div class="skill-header">
+            <div class="skill-icon-wrap"><i class="fab fa-git-alt" style="color:#f97316;"></i></div>
+            <span class="skill-level-badge">Advanced</span>
+          </div>
+          <div class="skill-name">Git &amp; GitHub</div>
+          <div class="skill-desc">Version control, feature branching, collaborative team workflows, pull requests, and repository maintenance.</div>
+          <div class="skill-bar-outer"><div class="skill-bar-inner" data-pct="88%"></div></div>
+          <div class="skill-bar-labels"><span>Proficiency</span><span>88%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png" alt="Logo" style="height:32px;">
+          <span style="font-weight:800; color:#fff;">MAREESWARAN</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 MAREESWARAN. All rights reserved.</div>
+        <div><a href="index.html" style="color:var(--text-muted); text-decoration:none;">⬅ Back to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

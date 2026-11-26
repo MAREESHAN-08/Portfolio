@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" rx="16" fill="url(#bgGrad3)"/>
+
+  <!-- Browser Header -->
+  <rect x="0" y="0" width="800" height="45" rx="16" fill="#1e293b" fill-opacity="0.8"/>
+  <rect x="0" y="25" width="800" height="20" fill="#1e293b" fill-opacity="0.8"/>
+  <circle cx="25" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="22" r="6" fill="#10b981"/>
+  <rect x="180" y="10" width="440" height="25" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="27" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" text-anchor="middle">shopsphere-store.dev | Modern Full-Stack Store</text>
+
+  <!-- Store Navbar -->
+  <rect x="25" y="55" width="750" height="45" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155"/>
+  <text x="45" y="83" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">Shop<tspan fill="#f59e0b">Sphere</tspan></text>
+  <text x="180" y="82" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="12">Explore</text>
+  <text x="245" y="82" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Electronics</text>
+  <text x="330" y="82" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Smart Gear</text>
+  <text x="420" y="82" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Accessories</text>
+
+  <rect x="650" y="65" width="105" height="26" rx="13" fill="url(#orangeGrad)"/>
+  <text x="702" y="82" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cart (3 items)</text>
+
+  <!-- Hero Promo Banner -->
+  <rect x="25" y="112" width="750" height="110" rx="12" fill="url(#blueGrad)" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="50" y="145" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">SPRING RELEASES 2026</text>
+  <text x="50" y="175" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">Next-Gen Developer Tech & Gear</text>
+  <text x="50" y="200" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">Instant Checkout · Real-time Cart · Secure Mock Payment Gateway</text>
+
+  <!-- Product Cards Grid -->
+  <!-- Product 1 -->
+  <rect x="25" y="235" width="235" height="225" rx="12" fill="#1e293b" fill-opacity="0.7" stroke="#334155"/>
+  <rect x="40" y="250" width="205" height="105" rx="8" fill="#0f172a"/>
+  <!-- Headphones icon illustration -->
+  <circle cx="142" cy="300" r="30" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  <rect x="102" y="295" width="15" height="25" rx="4" fill="#f59e0b"/>
+  <rect x="167" y="295" width="15" height="25" rx="4" fill="#f59e0b"/>
+  <text x="40" y="380" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Ultra Pro ANC Headphones</text>
+  <text x="40" y="402" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Hi-Res Audio · 40h Battery</text>
+  <text x="40" y="435" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">$189.99</text>
+  <rect x="165" y="415" width="80" height="28" rx="6" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b"/>
+  <text x="205" y="433" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Add to Cart</text>
+
+  <!-- Product 2 -->
+  <rect x="282" y="235" width="235" height="225" rx="12" fill="#1e293b" fill-opacity="0.7" stroke="#334155"/>
+  <rect x="297" y="250" width="205" height="105" rx="8" fill="#0f172a"/>
+  <!-- Smartwatch icon illustration -->
+  <rect x="382" y="265" width="36" height="75" rx="8" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="375" y="280" width="50" height="45" rx="6" fill="#38bdf8" fill-opacity="0.3" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="400" cy="302" r="8" fill="#38bdf8"/>
+  <text x="297" y="380" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Titan Smart Matrix Watch</text>
+  <text x="297" y="402" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">OLED Display · Heart & GPS</text>
+  <text x="297" y="435" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">$249.00</text>
+  <rect x="422" y="415" width="80" height="28" rx="6" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8"/>
+  <text x="462" y="433" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Add to Cart</text>
+
+  <!-- Product 3 -->
+  <rect x="540" y="235" width="235" height="225" rx="12" fill="#1e293b" fill-opacity="0.7" stroke="#334155"/>
+  <rect x="555" y="250" width="205" height="105" rx="8" fill="#0f172a"/>
+  <!-- Keyboard icon illustration -->
+  <rect x="575" y="280" width="165" height="45" rx="6" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="600" cy="295" r="3" fill="#10b981"/>
+  <circle cx="620" cy="295" r="3" fill="#10b981"/>
+  <circle cx="640" cy="295" r="3" fill="#10b981"/>
+  <circle cx="660" cy="295" r="3" fill="#10b981"/>
+  <circle cx="680" cy="295" r="3" fill="#10b981"/>
+  <circle cx="700" cy="295" r="3" fill="#10b981"/>
+  <text x="555" y="380" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">RGB Wireless Mech Keyboard</text>
+  <text x="555" y="402" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Hot-Swap · Custom Switches</text>
+  <text x="555" y="435" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">$129.50</text>
+  <rect x="680" y="415" width="80" height="28" rx="6" fill="#10b981" fill-opacity="0.2" stroke="#10b981"/>
+  <text x="720" y="433" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Add to Cart</text>
+</svg>

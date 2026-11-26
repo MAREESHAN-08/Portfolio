@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>About Me | MAREESWARAN</title>
+  <link rel="icon" type="image/png" href="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <canvas id="particleCanvas"></canvas>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png" alt="Logo">
+        <span class="nav-logo-text">MAREESWARAN<span class="nav-logo-tag">DEV</span></span>
+      </a>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeSwitchBtn" class="theme-switch-btn" title="Toggle Theme"><i class="fa-solid fa-palette"></i></button>
+        <a href="contact.html" class="btn-hire"><i class="fa-solid fa-bolt"></i> Hire Me</a>
+        <button id="menuToggle" class="menu-toggle"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section style="padding: 60px 0 100px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-user"></i> Professional Profile</div>
+        <h2 class="section-title">About <span class="gradient-text">Mareeswaran</span></h2>
+        <p class="section-desc">Software Engineer &amp; Data Science Undergraduate based in Colombo, Sri Lanka.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Architecting Clean Code &amp; <span class="gradient-text">Data Insights</span></h3>
+          <p>
+            I am a motivated aspiring <strong>Software Engineer and Data Science Undergraduate</strong> with a passion for building scalable web applications, writing clean code, and solving complex problems. With strong foundations in both full-stack software development and predictive data modeling, I enjoy turning ideas into real-world solutions.
+          </p>
+          <p>
+            I hold a <strong>Pearson BTEC Higher National Diploma in Computing (Merit)</strong> from Esoft Metro Campus, and am currently pursuing my <strong>Bachelor’s Degree in Data Science</strong> (affiliated with London Metropolitan University UK).
+          </p>
+          <p>
+            My engineering philosophy centers on clean architecture, continuous learning, and close agile collaboration with engineering teams.
+          </p>
+
+          <div style="margin-top: 30px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="MAREESWARAN CV.pdf" class="btn-primary" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+            <a href="contact.html" class="btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+          </div>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <i class="fab fa-python" style="color:#38bdf8;"></i>
+            <h4>Python &amp; SQL</h4>
+            <p>Data science, Pandas, NumPy, relational modeling, complex SQL queries, and database 3NF normalization.</p>
+          </div>
+          <div class="highlight-box">
+            <i class="fa-solid fa-chart-pie" style="color:#6366f1;"></i>
+            <h4>Excel &amp; Tableau BI</h4>
+            <p>Advanced PivotTables, automated reporting, KPI dashboards, and business data storytelling.</p>
+          </div>
+          <div class="highlight-box">
+            <i class="fab fa-java" style="color:#ef4444;"></i>
+            <h4>Java &amp; Flutter</h4>
+            <p>Core Java, Object-Oriented Programming (OOP), and responsive cross-platform mobile apps with Flutter.</p>
+          </div>
+          <div class="highlight-box">
+            <i class="fa-solid fa-palette" style="color:#ec4899;"></i>
+            <h4>Canva UI &amp; Web Design</h4>
+            <p>Creative UI/UX mockups, digital branding, responsive web styling with HTML5, CSS3, and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="m-logo-letter-icon-monogram-m-letter-design-with-white-line-monogram-and-minimalist-modern-creative-look-vector-removebg-preview.png" alt="Logo" style="height:32px;">
+          <span style="font-weight:800; color:#fff;">MAREESWARAN</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 MAREESWARAN. All rights reserved.</div>
+        <div><a href="index.html" style="color:var(--text-muted); text-decoration:none;">⬅ Back to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
